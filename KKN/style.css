@@ -159,20 +159,41 @@ h2 {
 }
 
 /* Tentang Kami Section */
-#tentang {
-  background: url("d:\\lier.jpeg") no-repeat center center/cover;
+/* Tentang Kami Section */
+#about {
+  position: relative;
+  background: url("c://Users//Lenovo//Downloads//kkn foto//IMG_9879.JPG")
+    no-repeat center center/cover;
+  background-attachment: fixed;
   text-align: center;
   color: white;
+  padding: 6rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.tentang-container {
+#about:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  border-radius: 15px;
+}
+
+#about .tentang-container {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
-.cta-item {
+.about-item {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
   padding: 1.5rem;
@@ -183,33 +204,52 @@ h2 {
   width: 280px;
 }
 
-.cta-item img {
+.about-item img {
   width: 100%;
   max-width: 300px;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-.tentang-item:hover {
+.about-item:hover {
   transform: translateY(-10px);
 }
 /* Kontak Kami Section */
-#kontak {
-  background: url("c:\\Users\\Lenovo\\Downloads\\IMG_9898.JPG") no-repeat center
-    center/cover;
+#contact {
+  background: url("c:\\Users\\Lenovo\\Downloads\\kkn foto\\IMG_1157.JPG")
+    no-repeat center center/cover;
   text-align: center;
   color: white;
-  padding: 6rem 2rem;
-  position: relative;
 }
 
-#kontak .section-content {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 2.5rem;
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
-  display: inline-block;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  color: black;
+  text-align: center;
+  width: 280px;
 }
 
+.contact-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.contact-item:hover {
+  transform: translateY(-10px);
+}
 /* Footer */
 footer {
   background: linear-gradient(to right, #4facfe, #00f2fe);
